@@ -28,3 +28,5 @@ while True: # Primeiro vamos fazer um loop para que rode o jogo inteiro
             print(letra_secreta) # exibe a letra secreta que o usuário acertou por que está entre a palavra secreta
         else: # SE não, FAÇA
             print('*') # Se o usuário digitar e a palavra não estiver entre ..
+
+#alterador no github - teste
