@@ -19,7 +19,22 @@ contrário disso:
     resultado é o valor da conta
 O primeiro dígito do cpf é 7
 '''
-cpf_enviado_usuario = '04852991359'
+import re
+import sys
+
+entrada = input('CPF = ')
+cpf_enviado_usuario = re.sub(
+    r'[^0-9]',
+    '',
+    entrada
+    )
+
+entrada_e_sequencial = entrada == entrada[0] * len(entrada)
+
+if entrada_e_sequencial:
+    print('Você enviou dados sequênciais')
+    sys.exit()
+
 nove_digitos = cpf_enviado_usuario[:9] # fatiamento que vai do 0 ao 9
 
 contador_regressivo_1 = 10
