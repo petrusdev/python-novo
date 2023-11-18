@@ -16,10 +16,8 @@ valor_casa = float(input('Digite o valor da casa: R$ '))
 salario = float(input('Digite sua renda mensal: R$ '))
 parcela = int(input('Quantos anos de financiamento? '))
 
-nomes = {'Nartan': 'Sexo Paia'}
-parcela_meses = parcela * 12
 salario_porcentagem = salario * 30 / 100
-valor_prestacao = valor_casa / parcela_meses
+valor_prestacao = valor_casa / (parcela * 12)
 print('')
 if valor_prestacao <= salario_porcentagem:
     print(f'Olá! Prazer em conhecer você {nomes}.')
