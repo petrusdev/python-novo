@@ -14,7 +14,7 @@ nota2 = float(input('Nota N2: '))
 media = (nota1 + nota2) / 2
 
 if media < 5:
-    print('\033[32mREPROVADO!\033[m')
+    print('\033[31mREPROVADO!\033[m')
 elif 5 <= media < 7:
     print('RECUPERAÇÃO!')
 elif media >= 7:
