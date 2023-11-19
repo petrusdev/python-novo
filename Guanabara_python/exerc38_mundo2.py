@@ -7,8 +7,11 @@ um atleta e mostre sua categoria, de acordo com a idade:
 - Até 20 anos: SÊNIOR
 - Acima: MASTER
 '''
+from datetime import date
+ano_atual = date.today().year
+
 data_nascimento = int(input('Digite o ano do seu nascimento: '))
-idade = 2023 - data_nascimento 
+idade = ano_atual - data_nascimento 
 
 if idade <= 9:
     print('Categoria: MIRIM')
