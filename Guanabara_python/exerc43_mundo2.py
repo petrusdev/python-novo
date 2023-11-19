@@ -12,7 +12,7 @@ elif genero == 'h':
     idade = ano_atual - nascimento
     print(f'Quem nasceu em {nascimento} tem {idade} anos em {ano_atual}')
 
-    if idade == 18 and genero != 'h':
+    if idade == 18:
         print('Você tem que se alistar IMEDIATAMENTE.')
 
     if idade < 18:
