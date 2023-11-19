@@ -26,6 +26,9 @@ elif escolha == 3:
     print(f'Sua compra parcelada em 2x no cartão ficou com preço normal de apenas R${valor} reais.')
 elif escolha == 4:
     juros_20 = valor + (valor * 20 / 100)
+    parcela = int(input('Quantidade parcelas: '))
+    qtd_parcela = juros_20 / parcela
+    print(f'Sua compra será parcelada em {parcela}x de {qtd_parcela} com juros')
     print(f'Sua compra parcelada no cartão 3x ou mais teve juros da máquina de 20% e ficou por R${juros_20} reais.')
 else:
     print('Opção inválida.')
